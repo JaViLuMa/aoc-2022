@@ -44,7 +44,6 @@ for move in moves:
   fromStack = move[1]
   toStack = move[2]
 
-  """Don't move one by one, move the whole stack depending on howMuch"""
   stacks[toStack] += stacks[fromStack][-howMuch:]
   
   stacks[fromStack] = stacks[fromStack][:-howMuch]
